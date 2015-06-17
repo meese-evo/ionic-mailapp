@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+CTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -30,8 +30,12 @@
         <h1 class="title">Ionic Blank Starter</h1>
       </ion-header-bar>
       <ion-content>
-      
+        <ion-list ng-controller="PostsCtrl">
+            
+            <ion-item ng-repeat="folder in folders" ng-click="selectFolder(folder)" class="item-thumbnail-left"> {{folder}}</ion-item>        
+        </ion-list>
       </ion-content>
     </ion-pane>
   </body>
 </html>
+
